@@ -1,0 +1,46 @@
+---
+import Link from "../components/Link.astro";
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="romilk-senpai">
+	<main>
+		<h1>romilk-senpai</h1>
+		<ul role="list" class="link-list">
+			<Link
+				href="https://www.linkedin.com/in/roman-pakhomov-409a96229/"
+				iconName="linkedin"
+			/>
+			<Link href="https://t.me/romilksenpai" iconName="telegram" />
+			<Link href="" iconName="discord" />
+			<Link
+				href="https://github.com/romilk-senpai"
+				iconName="github-white"
+			/>
+		</ul>
+	</main>
+
+	<style>
+		main {
+			margin: 144px auto;
+			width: fit-content;
+			height: fit-content;
+			color: white;
+			font-size: 20px;
+		}
+		main p {
+			display: block;
+			margin: auto;
+			width: fit-content;
+		}
+		.link-list {
+			margin: auto;
+			margin-top: 14px;
+			padding: 0;
+			width: fit-content;
+			height: 36px;
+		}
+	</style>
+</Layout>

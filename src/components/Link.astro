@@ -1,0 +1,37 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	href: string;
+	iconName: string;
+}
+
+const { href, iconName } = Astro.props;
+---
+
+<a class="link-item" href={href}>
+	<Icon name={iconName} />
+</a>
+
+<style>
+	.link-item {
+		display: inline-flex;
+		margin-right: 12px;
+		width: 36px;
+		height: 36px;
+		text-decoration: none;
+		transition:
+			transform,
+			0.2s ease-out;
+	}
+	.link-item:hover {
+		transform: scale(1.05);
+	}
+	.link-item svg {
+		width: 100%;
+		height: auto;
+	}
+	.link-item:last-child {
+		margin-right: 0;
+	}
+</style>
