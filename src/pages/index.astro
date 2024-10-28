@@ -19,12 +19,13 @@ import Layout from "../layouts/Layout.astro";
 				href="https://github.com/romilk-senpai"
 				iconName="github-white"
 			/>
+			<Link href="mailto:rpakhomov1702@gmail.com" iconName="email" />
 		</ul>
 		<script>
 			document
 				.querySelector("#discord")
 				?.addEventListener("click", () => {
-					navigator.clipboard.writeText('@shadowdemon9');
+					navigator.clipboard.writeText("@shadowdemon9");
 					alert("Discord tag copied to clipboard!");
 				});
 		</script>
